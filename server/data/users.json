@@ -1,0 +1,20 @@
+[
+  {
+    "id": "7053daec-913c-4802-b94d-ce93ce09524b",
+    "name": "Dima",
+    "email": "davlyatovmuhammadlai@gmail.com",
+    "phone": "+998938318858",
+    "salt": "ffa6475a-7896-40c6-83c0-9cd1d3a1d090",
+    "passwordHash": "89de1f63b97e2fa5789af6b5e4bd8ef58adb740ed900688a26d92e7277075b344256286bc99244001b715ede2c12a7a3ed7e2e0a18c6f54f60699a23b72aa8cf",
+    "createdAt": "2026-04-06T12:45:56.890Z"
+  },
+  {
+    "id": "cc2e9616-b31e-455b-b9ff-9b24a3014294",
+    "name": "ываыв",
+    "email": "davlyatovmuhammadali2002@gmail.com",
+    "phone": "+998938318858",
+    "salt": "145bff30-ff6e-456e-baf8-ee51300bd04c",
+    "passwordHash": "df72b9f46745b714a23d05df5b494483eb54e473f84aaac6835bf8716a2d3a200c0bd19871ecabc67aced7a878448429516663f2c82fbe875e9445f3e8716642",
+    "createdAt": "2026-04-07T04:30:25.971Z"
+  }
+]
