@@ -527,7 +527,7 @@ export const FAQ_ITEMS = [
 export const PRODUCTS = [
   {
     id: 'w-space',
-    category: 'speed',
+    category: ['speed', 'video', 'lane', ],
     brand: 'W-Space S',
     price: { ru: 'По запросу', uz: 'So‘rov bo‘yicha', en: 'On request', zh: '按需报价', kk: 'Сұраныс бойынша', be: 'Па запыце', tr: 'Talep üzerine' },
     badge: { ru: 'Рекомендуем', uz: 'Tavsiya etiladi', en: 'Recommended', zh: '推荐', kk: 'Ұсынылады', be: 'Рэкамендуем', tr: 'Önerilen' },
@@ -581,7 +581,7 @@ export const PRODUCTS = [
   },
   {
     id: 'redvision',
-    category: 'roadside',
+    category: ['roadside','speed', 'video', 'trafficLight', 'lane',],
     // category: 'redlight',
     brand: 'ASTRA',
     price: { ru: 'По запросу', uz: 'So‘rov bo‘yicha', en: 'On request', zh: '按需报价', kk: 'Сұраныс бойынша', be: 'Па запыце', tr: 'Talep üzerine' },
@@ -636,7 +636,7 @@ export const PRODUCTS = [
   },
   {
     id: 'lanevision',
-    category: 'lane',
+    category: ['speed'],
     brand: 'URALAN-P',
     price: { ru: 'По запросу', uz: 'So‘rov bo‘yicha', en: 'On request', zh: '按需报价', kk: 'Сұраныс бойынша', be: 'Па запыце', tr: 'Talep üzerine' },
     badge: { ru: 'Инженерное решение', uz: 'Muhandislik yechimi', en: 'Engineering solution', zh: '工程方案', kk: 'Инженерлік шешім', be: 'Інжынернае рашэнне', tr: 'Mühendislik çözümü' },
@@ -690,8 +690,8 @@ export const PRODUCTS = [
   },
     {
     id: 'photoPhone',
-    category: 'beltPhone',
-    brand: 'COMOTO',
+    category: ['beltPhone','trafficLight','video',],
+    brand: ['COMOTO',],
     price: { ru: 'По запросу', uz: 'So‘rov bo‘yicha', en: 'On request', zh: '按需报价', kk: 'Сұраныс бойынша', be: 'Па запыце', tr: 'Talep üzerine' },
     badge: { ru: 'Рекомендуем', uz: 'Tavsiya etiladi', en: 'Recommended', zh: '推荐', kk: 'Ұсынылады', be: 'Рэкамендуем', tr: 'Önerilen' },
     inStock: true,
@@ -753,7 +753,17 @@ export const PRODUCTS = [
   },
   {
     id: 'photofix',
-    category: 'video',
+    category: ['video','railwayCrossings','parking'],
+        // speed: 'Скорость (1-320км/ч)',
+        // roadside: 'Движение по обочине',
+        // lane: 'Встречная полоса',
+        // beltPhone: 'Ремень-Телефон',
+        // video: 'Розыск ТС',
+        // trafficLight: 'Проезд на \n красный свет🚦',
+        // buss: 'А Полоса',
+        // parking: 'Парковка',
+        // pedestrianCrossing: 'Пешеходный переход',
+        // railwayCrossings: 'Ж/Д переезды',
     brand: 'SOVA-M',
     price: { ru: 'По запросу', uz: 'So‘rov bo‘yicha', en: 'On request', zh: '按需报价', kk: 'Сұраныс бойынша', be: 'Па запыце', tr: 'Talep üzerine' },
     badge: { ru: 'Рекомендуем', uz: 'Tavsiya etiladi', en: 'Recommended', zh: '推荐', kk: 'Ұсынылады', be: 'Рэкамендуем', tr: 'Önerilen' },

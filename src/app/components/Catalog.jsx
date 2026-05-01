@@ -22,7 +22,20 @@ export function Catalog({ onOpenProduct }) {
     { id: 'railwayCrossings', label: text.catalog.categories.railwayCrossings },
   ]), [text]);
 
-  const filtered = PRODUCTS.filter((product) => selectedCategory === 'all' || product.category === selectedCategory);
+  // const filtered = PRODUCTS.filter((product) => selectedCategory === 'all' || product.category === selectedCategory);
+
+  const filtered = PRODUCTS.filter((product) => {
+  // Если выбрано "Все", показываем всё
+  if (selectedCategory === 'all') return true;
+
+  // Если category у товара — это массив, проверяем, есть ли в нем выбранный ID
+  if (Array.isArray(product.category)) {
+    return product.category.includes(selectedCategory);
+  }
+
+  // На всякий случай оставляем проверку для строк (если не все товары еще переделаны)
+  return product.category === selectedCategory;
+});
 
   return (
     <section id="catalog" className="relative overflow-hidden bg-slate-50 py-24 transition-colors dark:bg-black">
