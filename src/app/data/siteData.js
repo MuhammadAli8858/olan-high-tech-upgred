@@ -686,7 +686,7 @@ export const PRODUCTS = [
       be: ['Вылучаныя палосы', 'Магістралі','Небяспечныя ўчасткі дарог'],
       tr: ['Ayrılmış şeritler','Otoyollar','Yolların tehlikeli bölümleri'],
     },
-    images: ['/products/uralan-p.png', 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=1200&auto=format&fit=crop', '/products/olan-complex-1.png'],
+    images: ['/products/uralan-p.png', '/dist/products/uralan-p1.png', '/dist/products/uralan-p2.png'],
   },
     {
     id: 'photoPhone',
