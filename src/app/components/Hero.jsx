@@ -26,8 +26,12 @@ export function Hero({ openAuthModal }) {
 
       <RadarAnimation />
 
-      <div className="absolute left-10 top-28 h-72 w-72 rounded-full bg-cyan-500/15 blur-3xl" />
-      <div className="absolute bottom-16 right-10 h-80 w-80 rounded-full bg-blue-500/15 blur-3xl" />
+      <div className="absolute top-20 left-10 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+
+    
+      {/* <div className="absolute left-10 top-28 h-72 w-72 rounded-full bg-cyan-500/15 blur-3xl" />
+      <div className="absolute bottom-16 right-10 h-80 w-80 rounded-full bg-blue-500/15 blur-3xl" /> */}
 
       <div className="container relative z-20 mx-auto px-4 py-20">
         <div className="mx-auto max-w-5xl text-center">
@@ -71,7 +75,8 @@ export function Hero({ openAuthModal }) {
             <button
               type="button"
               onClick={() => scrollToId('catalog')}
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-xl shadow-cyan-500/20 transition hover:translate-y-[-1px]"
+            className="inline-flex px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full font-medium text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-105"
+              // className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-xl shadow-cyan-500/20 transition hover:translate-y-[-1px]"
             >
               {text.actions.openCatalog}
               <Search className="h-5 w-5" />
@@ -79,7 +84,7 @@ export function Hero({ openAuthModal }) {
             <button
               type="button"
               onClick={openAuthModal}
-              className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-white/80 px-8 py-4 text-lg font-semibold text-slate-700 backdrop-blur transition hover:border-cyan-500/50 hover:text-cyan-600 dark:bg-white/5 dark:text-white"
+              className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-white/80 px-8 py-4 text-lg font-semibold text-slate-700 hover:shadow-2xl hover:shadow-cyan-500/35 backdrop-blur transition hover:border-cyan-500/50 hover:text-cyan-600 hover:scale-105 dark:bg-white/5 dark:text-white"
             >
               {text.actions.consultation}
               <ArrowRight className="h-5 w-5" />

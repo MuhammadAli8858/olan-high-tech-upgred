@@ -53,11 +53,15 @@ export function Header({ openAuthModal }) {
             transition={{ delay: 0.1 }}
           >
             {navItems.map((item) => (
+              
               <button
                 key={item.href}
                 type="button"
                 onClick={() => scrollToId(item.href)}
-                className="text-sm text-slate-600 transition hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400"
+
+                // className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"
+                className="text-gray-300 hover:text-cyan-400 transition-colors text-sm relative group"
+                // className="text-sm text-slate-600 transition hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400"
               >
                 {item.name}
               </button>
